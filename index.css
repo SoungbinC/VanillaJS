@@ -1,0 +1,46 @@
+*{
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+div {
+    border: 1px solid white;
+}
+
+#container {
+    width: auto;
+    height: auto;
+}
+
+#Matrix {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+}
+
+.square {
+    position: relative;
+    display: inline-block;
+    width: 30%; height: 30%;
+    border-color: black;
+    overflow: auto;
+}
+.you{
+    position: relative;
+    display: inline-block;
+    width: 30%; height: 30%;
+    border-color: black;
+    background-color: blue;
+    overflow: auto;
+}
+.cmp{
+    position: relative;
+    display: inline-block;
+    width: 30%; height: 30%;
+    border-color: black;
+    background-color: red;
+    overflow: auto;
+}
+

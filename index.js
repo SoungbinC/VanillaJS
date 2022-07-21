@@ -123,11 +123,12 @@ const marksquare =(event) => {
     }
     player.removeEventListener('click', marksquare)
     setTimeout(cmp_marksquare,1000)
+    //have to code for Waiting time for players so they can't choose while cmp choice
     if(log != null){
         return
     }
 }
-   
+
 const cmp_marksquare = () =>{
     const next_cell_list = document.getElementsByClassName('square')
     if(next_cell_list.length != 0){

@@ -116,7 +116,19 @@ const marksquare =(event) => {
     setting_table(player_number,"you")
     move++
     win_tic("you")
+
+    const log = document.querySelector('#log')
+    if(log != null){
+        return
+    }
     player.removeEventListener('click', marksquare)
+    setTimeout(cmp_marksquare,1000)
+    if(log != null){
+        return
+    }
+}
+   
+const cmp_marksquare = () =>{
     const next_cell_list = document.getElementsByClassName('square')
     if(next_cell_list.length != 0){
 
@@ -130,8 +142,6 @@ const marksquare =(event) => {
         move++
         win_tic("cmp")
     }
-
-
 }
 
 
@@ -151,10 +161,11 @@ const CreateMatrix = () =>{
                 ]
 
     const log = document.querySelector('#log')
-
-    if( log != null){
-        log.parentNode.removeChild(log)
+    
+    if(log != null){
+        log.parentNode.removeChild(log) 
     }
+
     for(let i = 0; i < 9; i++){
         const square = document.createElement('div')
         square.setAttribute('name',i)
